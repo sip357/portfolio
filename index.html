@@ -23,7 +23,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="navbar-nav mr-auto"></ul>
                     <li class="nav-item active">
-                        <a href="">About</a>
+                        <a href="#about">About</a>
                         <a href="">Github</a>
                         <a href="">Let's Connect</a>
                     </li>
@@ -36,18 +36,68 @@
             <div class="welcome">
                 <p>Welcome to my portfolio! I'm a full-time student at the 
                     University of Lethbridge pursuing a Bachelor's degree in Computer Science.</p>
-                <button class="button-3">
+                <button class="button-3" id="downloadCV">
                     Download CV
                 </button>
             </div>
         </header>
-        <div class="profileCard">
-            Profile Card
-            <p>Hey I am an avid learner</p>
-        </div>
+        <!-- Profile Card -->
+         
+         <div class="profile" id="about">
+            <div class="profile-card">
+                <h1>About Me</h1>
+                <div class="profile-img">
+                    <img src="picture/Uni pic.jpg" alt="Portrait">
+                </div>
+                <div class="profile-info">
+                    <h2>Somto Ike-Peters</h2>
+                    <p class="title">Software Developer</p>
+                    <p class="description">I am a motivated student willing to go extra mile 
+                        to make positive contributions. Adaptable and logical team player 
+                        that manages multiple priorities with positive, 'can-do' attitude. 
+                        Avid learner of Computer Science. 
+                        I'm driven by a desire to develop projects that have 
+                        a real purpose and make a lasting, meaningful impact on the world.</p>
+                </div>
+            </div>
+            <!-- Experience -->
+            <div class="profile-card">
+                <div class="experience-info">
+                    <h1>Experience</h1>
+                    <img src="/picture/NLNGLogo.png" class="companyLogo" alt="NLNG">
+                    <h2>NLNG</h2>
+                    <p class="title">Intern</p>
+                    <div class="tagBox">
+                        <p class="tag">HTML</p>
+                        <p class="tag">CSS</p>
+                        <p class="tag">Incident Response</p>
+                        <p class="tag">CyberSecurity</p>
+                        <p class="tag">MS Office</p>
+                    </div>
+                </div>
+                <div class="experience-info">
+                    <img src="/picture/ATCOLogo.png" class="companyLogo" alt="ATCO">
+                    <h2>ATCO</h2>
+                    <p class="title">Summer Student</p>
+                    <div class="tagBox">
+                        <p class="tag">Power BI</p>
+                        <p class="tag">Excel</p>
+                        <p class="tag">Power Automate</p>
+                        <p class="tag">Power Apps</p>
+                        <p class="tag">SharePoint</p>
+                        <p class="tag">MS Office</p>
+                    </div>
+                </div>
+            </div>
+         </div>
+        
+        
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript -->
+        <script src="script.js"></script>
     </body>
     <footer>
         <a href="/">Github</a>
