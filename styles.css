@@ -166,7 +166,7 @@ ul{
 
 .experience-info {
   padding: 10px;
-  margin: 10px;
+  margin: 15px;
   /* display: block; */
   border: 1px solid white;
   border-radius: 10px;
@@ -269,7 +269,7 @@ h3 {
 
 /* Style the images inside each slide */
 .slide img {
-  max-width: 100px; /* Limit the size of the image */
+  max-width: 100px;
   height: auto;
   margin-bottom: 10px; /* Add space between the image and text */
 }
