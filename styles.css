@@ -1,10 +1,12 @@
 :root{
   --bs-gradient: linear-gradient(to right, #0f0f0f, #232323);
   --bs-whitegradient: linear-gradient(to left, #ffffff, #c2c2c2);
+  --bs-bluegradient: linear-gradient(to left top, #031A9A, #8B53FF);;
   --bs-font: 'Poppins';
   --bs-black: rgb(26, 26, 26);
   --bs-white: rgb(216, 216, 216);
   --bs-grey: rgb(150, 150, 150);
+  --bs-purple: #9e0083;
 }
 
 html {
@@ -49,13 +51,7 @@ header {
   font-weight: bolder;
 }
 
-h1 {
-  text-align: center;
-  font-family: var(--bs-font); 
-  font-size: 30px;
-  font-weight: bolder;
-  top: 0;
-}
+
 
 .welcome{
   text-align: center;
@@ -79,7 +75,8 @@ ul{
 
 .button-3 {
   appearance: none;
-  background-color: #9e0083;
+  background-image: var(--bs-bluegradient);
+  /* background-color: var(--bs-bluegradient); */
   border: 1px solid rgba(27, 31, 35, .15);
   border-radius: 6px;
   box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
@@ -132,20 +129,21 @@ ul{
   display: flex;
   max-width: 80%;
   margin: auto;
+  padding-bottom: 7rem;
 }
 
 .profile-card {
-  /* background-image: var(--bs-gradient); */
-  background-color: var(--bs-black);
+  background-image: var(--bs-bluegradient);
+  /* background-color: var(--bs-black); */
   /* border: 1px solid #fff; */
   border-radius: 10px;
-  box-shadow: 0 4px 8px #9e0083;
+  box-shadow: 0 4px 8px black;
   overflow: hidden;
   max-width: 40%; /* Adjust as needed */
   margin: 20px auto;
   text-align: center;
   font-family: var(--bs-font);
-  color: var(--bs-white);
+  color: white;
 }
 
 .profile-img {
@@ -168,7 +166,7 @@ ul{
   padding: 10px;
   margin: 10px;
   /* display: block; */
-  background-color: #0f0f0f;
+  border: 1px solid white;
   border-radius: 10px;
 }
 
@@ -176,12 +174,28 @@ ul{
   width: 250px;
   height: auto;
 }
+h1 {
+  text-align: center;
+  font-family: var(--bs-font); 
+  font-size: 30px;
+  font-weight: bolder;
+  margin: 10px;
+  color: white;
+}
 
 h2 {
   margin: 10px 0 5px;
   font-size: 24px;
 }
 
+h3 {
+  text-align: center;
+  font-family: var(--bs-font); 
+  font-size: 40px;
+  font-weight: bolder;
+  margin: 10px;
+  color: white;
+}
 .title {
   font-size: 18px;
   margin-bottom: 10px;
@@ -189,6 +203,7 @@ h2 {
 
 .description {
   font-size: 16px;
+  font-weight: 600px;
 }
 
 .tagBox {
@@ -203,14 +218,22 @@ h2 {
 
 .tag {
   font-size: 16px;
-  color: var(--bs-grey);
-  font-weight: 600;
+  color: var(--bs-white);
+  font-weight: light;
   padding: 4px 16px;
   border: 1px solid #232323;
   overflow: hidden;
   margin: 1px;
 }
 
+.skillsBox {
+  display: flex;
+
+}
+
+.purpleText {
+  color: var(--bs-purple);
+}
 .contactLinks {
   display: flex;
 }
