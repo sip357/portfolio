@@ -1,7 +1,9 @@
 :root{
   --bs-gradient: linear-gradient(to right, #0f0f0f, #232323);
   --bs-whitegradient: linear-gradient(to left, #ffffff, #c2c2c2);
-  --bs-bluegradient: linear-gradient(to left top, #031A9A, #8B53FF);;
+  --bs-bluegradient: linear-gradient(to left top, #031A9A, #8B53FF);
+  --bs-darkbluegradient: linear-gradient(to left top, #021276, #6A3FCC);
+  --bs-greygradient: linear-gradient(to right top, #16203f, #201a23);
   --bs-font: 'Poppins';
   --bs-black: rgb(26, 26, 26);
   --bs-white: rgb(216, 216, 216);
@@ -133,7 +135,7 @@ ul{
 }
 
 .profile-card {
-  background-image: var(--bs-bluegradient);
+  background-image: var(--bs-darkbluegradient);
   /* background-color: var(--bs-black); */
   /* border: 1px solid #fff; */
   border-radius: 10px;
@@ -197,17 +199,16 @@ h3 {
   color: white;
 }
 .title {
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 10px;
 }
 
 .description {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600px;
 }
 
 .tagBox {
-  font-size: 16px;
   color: var(--bs-grey);
   display: flex;
   flex-wrap: wrap;
@@ -226,10 +227,72 @@ h3 {
   margin: 1px;
 }
 
-.skillsBox {
-  display: flex;
-
+/* Container to hold the entire slider */
+.slider-container {
+  width: 60%;
+  margin: auto;
+  overflow: hidden; /* Hide the overflow */
+  background-image: var(--bs-darkbluegradient);
+  padding: 20px 0;
+  border-radius: 10px;
 }
+
+/* Pause animation on hover */
+.slider-container:hover .slider-track {
+  animation-play-state: paused;
+}
+
+/* The inner track that will move */
+.slider-track {
+  display: flex; /* Align the items in a row */
+  width: max-content; /* Allow the track to be wider than the container */
+  animation: scroll 60s linear infinite; /* Apply animation */
+}
+
+/* Each individual slide */
+.slide {
+  min-width: 200px; /* Set a fixed width for each skill */
+  height: auto;
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-image: var(--bs-greygradient);
+  color: white;
+  font-size: 18px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style the images inside each slide */
+.slide img {
+  max-width: 100px; /* Limit the size of the image */
+  height: auto;
+  margin-bottom: 10px; /* Add space between the image and text */
+}
+
+/* Style the text inside each slide */
+.slide p {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+}
+
+
+/* Animation for sliding */
+@keyframes scroll {
+  0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
 
 .purpleText {
   color: var(--bs-purple);

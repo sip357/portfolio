@@ -15,3 +15,13 @@ document.getElementById('downloadCV').addEventListener('click', function() {
     // Remove the anchor from the document
     document.body.removeChild(link);
 });
+
+// Get the track element
+const sliderTrack = document.querySelector('.slider-track');
+
+// Clone the elements to create an infinite effect
+const slides = Array.from(sliderTrack.children);
+slides.forEach(slide => {
+    let clone = slide.cloneNode(true);
+    sliderTrack.appendChild(clone);
+});
