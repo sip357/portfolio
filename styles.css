@@ -197,6 +197,7 @@ h3 {
   font-size: 40px;
   font-weight: bolder;
   margin: 10px;
+  padding-top: 5rem;
   color: white;
 }
 .title {
@@ -230,12 +231,11 @@ h3 {
 
 /* Container to hold the entire slider */
 .slider-container {
-  width: 60%;
-  margin: auto;
+  width: 100%;
+  /* margin: auto; */
   overflow: hidden; /* Hide the overflow */
   background-image: var(--bs-darkbluegradient);
   padding: 20px 0;
-  border-radius: 10px;
 }
 
 /* Pause animation on hover */
@@ -252,35 +252,37 @@ h3 {
 
 /* Each individual slide */
 .slide {
-  min-width: 200px; /* Set a fixed width for each skill */
-  height: auto;
-  padding: 10px 10px;
-  margin-right: 10px;
-  background-image: var(--bs-greygradient);
-  color: white;
-  font-size: 18px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    min-width: 200px; /* Set a fixed width for each skill */
+    height: auto;
+    padding: 10px 10px;
+    margin-right: 10px;
+    background-image: var(--bs-greygradient);
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; /* Ensure items are spaced top and bottom */
 }
 
 /* Style the images inside each slide */
 .slide img {
-  max-width: 100px;
-  height: auto;
-  margin-bottom: 10px; /* Add space between the image and text */
+    max-width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+    flex-grow: 1; /* Allow the image to grow and push the text down */
+    object-fit: contain; /* Keep the image contained */
 }
 
 /* Style the text inside each slide */
 .slide p {
-  margin: 0;
-  font-size: 18px;
-  font-weight: bold;
-  color: white;
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
 }
 
 
