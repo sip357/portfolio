@@ -20,19 +20,32 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     </head>
     <body id="page-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="name" href="#">Somto Ike-Peters</a>
-            <div class="navbar-collapse collapse">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light sticky-top">
+            <a class="navbar-brand name" href="#">Somto Ike-Peters</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarNav" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- This empty ul keeps other elements on the left side -->
                 <ul class="navbar-nav mr-auto"></ul>
-                    <li class="nav-item active">
-                        <a href="#about">About</a>
-                        <a href="">Github</a>
-                        <a href="">Let's Connect</a>
+        
+                <!-- This ul will stay aligned to the right -->
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com">GitHub</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Let's Connect</a>
                     </li>
                 </ul>
             </div>
-            
         </nav>
+        
         <header>
             Hello
             <div class="welcome">
@@ -94,9 +107,17 @@
         </div>
 
         <!-- Skills -->
-        <h3>My <span class="purpleText">Skills</span></h3>
-        <div class="slider-container">
+        <h3>My <span class="purpleText">Powers</span></h3>
+        <div class="slider-container" id="powers">
             <div class="slider-track">
+                <div class="slide">
+                    <img src="/picture/CplusplusLogo.png" alt="C++">
+                    <p>C++</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/PythonLogo.png" alt="Skill 4">
+                    <p>Python</p>
+                </div>
                 <div class="slide">
                     <img src="/picture/HTMLLogo.png" alt="HTML">
                     <p>HTML</p>
@@ -106,50 +127,66 @@
                     <p>CSS</p>
                 </div>
                 <div class="slide">
-                    <img src="/picture/JSLogo.png" alt="Skill 3">
+                    <img src="/picture/tailwind-logo.png" alt="Tailwind">
+                    <p>Tailwind CSS</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/TSLogo.png" alt="TypeScript">
+                    <p>TypeScript</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/JSLogo.png" alt="JavaScript">
                     <p>JavaScript</p>
                 </div>
                 <div class="slide">
-                    <img src="/picture/PythonLogo.png" alt="Skill 4">
-                    <p>Python</p>
-                </div>
-                <div class="slide">
-                    <img src="path-to-your-image5.jpg" alt="C++">
-                    <p>C++</p>
-                </div>
-                <div class="slide">
-                    <img src="path-to-your-image5.jpg" alt="TypeScript">
-                    <p>TypeScript</p>
+                    <img src="/picture/react-logo.png" alt="React">
+                    <p>React</p>
                 </div>
             </div>
         </div>
         
         <h3>My <span class="purpleText">Tools</span></h3>
-        <div class="slider-container">
+        <div class="slider-container" id="tools">
             <div class="slider-track">
                 <div class="slide">
-                    <img src="/picture/Power-BI-Logo.png" alt="HTML">
-                    <p>Power BI</p>
+                    <img src="/picture/Next.js-logo.png" alt="NextJS">
+                    <p>NextJS</p>
                 </div>
                 <div class="slide">
-                    <img src="/picture/CSSLogo.png" alt="Skill 2">
-                    <p>CSS</p>
+                    <img src="/picture/nodejs-logo.png" alt="NodeJS">
+                    <p>Node.js</p>
                 </div>
                 <div class="slide">
-                    <img src="/picture/JSLogo.png" alt="Skill 3">
-                    <p>JavaScript</p>
+                    <img src="/picture/mongodb-logo.png" alt="NodeJS">
+                    <p>MongoDB</p>
                 </div>
                 <div class="slide">
-                    <img src="/picture/PythonLogo.png" alt="Skill 4">
-                    <p>Python</p>
+                    <img src="/picture/git-logo.png" alt="Git">
+                    <p>Git</p>
                 </div>
                 <div class="slide">
-                    <img src="path-to-your-image5.jpg" alt="C++">
-                    <p>C++</p>
+                    <img src="/picture/github-logo.png" alt="GitHub">
+                    <p>GitHub</p>
                 </div>
                 <div class="slide">
-                    <img src="path-to-your-image5.jpg" alt="TypeScript">
-                    <p>TypeScript</p>
+                    <img src="/picture/vscode-logo.png" alt="VSCode">
+                    <p>VS Code</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/vercel-logo.png" alt="Vercel">
+                    <p>Vercel</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/postman-logo.png" alt="Postman">
+                    <p>Postman</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/Power-BI-Logo.png" alt="PowerBI">
+                    <p>PowerBI</p>
+                </div>
+                <div class="slide">
+                    <img src="/picture/excel-logo.png" alt="Excel">
+                    <p>Microsoft Excel</p>
                 </div>
             </div>
         </div>

@@ -16,12 +16,18 @@ document.getElementById('downloadCV').addEventListener('click', function() {
     document.body.removeChild(link);
 });
 
-// Get the track element
-const sliderTrack = document.querySelector('.slider-track');
+// Select all slider tracks
+const sliderContainers = document.querySelectorAll('.slider-container');
 
-// Clone the elements to create an infinite effect
-const slides = Array.from(sliderTrack.children);
-slides.forEach(slide => {
-    let clone = slide.cloneNode(true);
-    sliderTrack.appendChild(clone);
+sliderContainers.forEach(container => {
+    const sliderTrack = container.querySelector('.slider-track'); // Get the track element for this specific slider
+    const slides = Array.from(sliderTrack.children);
+
+    // Clone the elements to create an infinite effect
+    slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        sliderTrack.appendChild(clone);
+    });
+
+    // Optional: Add functionality to move slides, e.g., auto-scroll or next/prev buttons
 });

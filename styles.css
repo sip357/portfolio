@@ -16,29 +16,75 @@ html {
 }
 
 body {
-  height: 100vh;
   margin: 0;
   background-image: var(--bs-gradient);
   color: white;
   cursor: url('/picture/selection.png'), auto;
 }
+
+/* Extra small devices (phones, 0px - 575px) */
+@media only screen and (max-width: 575px) {
+  .welcome{
+    width: 70%;
+  }
+}
+
+/* Small devices (tablets, 576px - 767px) */
+@media only screen and (max-width: 767px) {
+  .welcome{
+    width: 60%;
+  }
+}
+
+/* Medium devices (desktops, 768px - 991px) */
+@media only screen and (max-width: 991px) {
+  .profile {
+    flex-direction: column;
+  }
+  
+  .profile-card {
+    overflow: hidden !important;
+  }
+  .welcome{
+    width: 55%;
+    margin: 0 auto;
+    padding-bottom: 6rem!important;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  /* Styles for larger desktops */
+  .profile-card {
+    background-image: var(--bs-darkbluegradient);
+    /* background-color: var(--bs-black); */
+    /* border: 1px solid #fff; */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px black;
+    overflow: hidden;
+    max-width: 40%!important; /* Adjust as needed */
+    margin: 20px auto;
+    text-align: center;
+    font-family: var(--bs-font);
+    color: white;
+  }
+}
+
 nav {
   background-image: var(--bs-gradient);
-  padding: 10px;
+  padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow with semi-transparent black */
-  color: white;
-  position:sticky;
-  overflow: hidden;
+
 }
 .name{
   font-family: var(--bs-font);
   font-size: x-large;
 }
 nav a {
-  color: inherit;
   margin: 0 15px;
   text-decoration: none;
   font-weight: bold;
+  font-family: var(--bs-font);
 }
 nav a:hover {
   color: white;
@@ -52,8 +98,6 @@ header {
   font-size: 100px;
   font-weight: bolder;
 }
-
-
 
 .welcome{
   text-align: center;
@@ -131,6 +175,7 @@ ul{
   display: flex;
   max-width: 80%;
   margin: auto;
+  flex-wrap: wrap;
   padding-bottom: 7rem;
 }
 
@@ -141,7 +186,7 @@ ul{
   border-radius: 10px;
   box-shadow: 0 4px 8px black;
   overflow: hidden;
-  max-width: 40%; /* Adjust as needed */
+  max-width: 80%; /* Adjust as needed */
   margin: 20px auto;
   text-align: center;
   font-family: var(--bs-font);
@@ -247,7 +292,7 @@ h3 {
 .slider-track {
   display: flex; /* Align the items in a row */
   width: max-content; /* Allow the track to be wider than the container */
-  animation: scroll 60s linear infinite; /* Apply animation */
+  animation: scroll 110s linear infinite; /* Apply animation */
 }
 
 /* Each individual slide */
@@ -315,3 +360,4 @@ footer i {
   font-size: 40px;
   margin: 30px;
 }
+
