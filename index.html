@@ -37,6 +37,9 @@
                         <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="https://github.com/sip357">GitHub</a>
                     </li>
                     <li class="nav-item">
@@ -57,57 +60,58 @@
             </div>
         </header>
         <!-- Profile Card -->
-         
-         <div class="profile" id="about">
-            <div class="profile-card">
-                <h1>About Me</h1>
-                <div class="profile-img">
-                    <img src="picture/Uni pic.jpg" alt="Portrait">
-                </div>
-                <div class="profile-info">
-                    <h2>Somto Ike-Peters</h2>
-                    <p class="title">Software Developer</p>
-                    <p class="description">I am a motivated student willing to go extra mile 
-                        to make positive contributions. Adaptable and logical team player 
-                        that manages multiple priorities with positive, 'can-do' attitude. 
-                        Avid learner of Computer Science. 
-                        I'm driven by a desire to develop projects that have 
-                        a real purpose and make a lasting, meaningful impact on the world.</p>
-                </div>
-            </div>
-            <!-- Experience -->
-            <div class="profile-card">
-                <h1>Experience</h1>
-                <div class="experience-info">
-                    <img src="/picture/NLNGLogo.png" class="companyLogo" alt="NLNG">
-                    <h2>NLNG</h2>
-                    <p class="title">Intern</p>
-                    <div class="tagBox">
-                        <p class="tag">HTML</p>
-                        <p class="tag">CSS</p>
-                        <p class="tag">Incident Response</p>
-                        <p class="tag">CyberSecurity</p>
-                        <p class="tag">MS Office</p>
+        <section id="about">
+            <div class="profile">
+                <div class="profile-card">
+                    <h1>About Me</h1>
+                    <div class="profile-img">
+                        <img src="picture/Uni pic.jpg" alt="Portrait">
+                    </div>
+                    <div class="profile-info">
+                        <h2>Somto Ike-Peters</h2>
+                        <p class="title">Software Developer</p>
+                        <p class="description">I am a motivated student willing to go extra mile 
+                            to make positive contributions. Adaptable and logical team player 
+                            that manages multiple priorities with positive, 'can-do' attitude. 
+                            Avid learner of Computer Science. 
+                            I'm driven by a desire to develop projects that have 
+                            a real purpose and make a lasting, meaningful impact on the world.</p>
                     </div>
                 </div>
-                <div class="experience-info">
-                    <img src="/picture/ATCOLogo.png" class="companyLogo" alt="ATCO">
-                    <h2>ATCO</h2>
-                    <p class="title">Summer Student</p>
-                    <div class="tagBox">
-                        <p class="tag">Power BI</p>
-                        <p class="tag">Excel</p>
-                        <p class="tag">Power Automate</p>
-                        <p class="tag">Power Apps</p>
-                        <p class="tag">SharePoint</p>
-                        <p class="tag">MS Office</p>
+                <!-- Experience -->
+                <div class="profile-card">
+                    <h1>Experience</h1>
+                    <div class="experience-info">
+                        <img src="/picture/NLNGLogo.png" class="companyLogo" alt="NLNG">
+                        <h2>NLNG</h2>
+                        <p class="title">Intern</p>
+                        <div class="tagBox">
+                            <p class="tag">HTML</p>
+                            <p class="tag">CSS</p>
+                            <p class="tag">Incident Response</p>
+                            <p class="tag">CyberSecurity</p>
+                            <p class="tag">MS Office</p>
+                        </div>
+                    </div>
+                    <div class="experience-info">
+                        <img src="/picture/ATCOLogo.png" class="companyLogo" alt="ATCO">
+                        <h2>ATCO</h2>
+                        <p class="title">Summer Student</p>
+                        <div class="tagBox">
+                            <p class="tag">Power BI</p>
+                            <p class="tag">Excel</p>
+                            <p class="tag">Power Automate</p>
+                            <p class="tag">Power Apps</p>
+                            <p class="tag">SharePoint</p>
+                            <p class="tag">MS Office</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Skills -->
-        <h3>My <span class="purpleText">Powers</span></h3>
+        <section id="skills">
+            <h3>My <span class="purpleText">Powers</span></h3>
         <div class="slider-container" id="powers">
             <div class="slider-track">
                 <div class="slide">
@@ -194,13 +198,16 @@
                 </div>
             </div>
         </div>
+        </section>
 
-        <div class="project-card" id="#projects">
+        <section>
+          <div class="project-card" id="projects">
             <img src="project-image.jpg" alt="Project Image" class="project-image">
             <div class="project-details">
               <h2 class="project-title">Project Title</h2>
               <p class="project-description">
-                This is a brief description of the project. It highlights the key features and provides an overview.
+                This is a brief description of the project. 
+                It highlights the key features and provides an overview.
               </p>
               <a href="/">
                 <button class="button-3">
@@ -208,7 +215,9 @@
                 </button>
               </a>
             </div>
-        </div>
+            </div>  
+        </section>
+        
           
         
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

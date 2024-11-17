@@ -22,17 +22,21 @@ body {
   cursor: url('/picture/selection.png'), auto;
 }
 
+section {
+  padding: 5rem 0 5rem 0;
+}
+
 /* Extra small devices (phones, 0px - 575px) */
 @media only screen and (max-width: 575px) {
   .welcome{
-    width: 70%;
+    width: 90%;
   }
 }
 
 /* Small devices (tablets, 576px - 767px) */
 @media only screen and (max-width: 767px) {
   .welcome{
-    width: 60%;
+    width: 70%;
   }
 }
 
@@ -48,7 +52,6 @@ body {
   .welcome{
     width: 55%;
     margin: 0 auto;
-    padding-bottom: 6rem!important;
   }
 }
 
@@ -74,7 +77,6 @@ nav {
   background-image: var(--bs-gradient);
   padding: 5px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Shadow with semi-transparent black */
-
 }
 .name{
   font-family: var(--bs-font);
@@ -92,7 +94,6 @@ nav a:hover {
 }
 header {
   padding-top: 5rem;
-  padding-bottom: 2rem;
   text-align: center;
   font-family: var(--bs-font); 
   font-size: 100px;
@@ -176,7 +177,6 @@ ul{
   max-width: 80%;
   margin: auto;
   flex-wrap: wrap;
-  padding-bottom: 7rem;
 }
 
 .profile-card {
@@ -242,7 +242,7 @@ h3 {
   font-size: 40px;
   font-weight: bolder;
   margin: 10px;
-  padding-top: 5rem;
+  padding-top: 2rem;
   color: white;
 }
 .title {
