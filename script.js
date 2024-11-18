@@ -2,7 +2,7 @@
 document.getElementById('downloadCV').addEventListener('click', function() {
     var link = document.createElement('a');
     
-    link.href = "resume/SomtoSWEResume.pdf";
+    link.href = "resume/SomtoResume.pdf";
     
     link.download = 'SomtoResume.pdf'; 
     
@@ -20,7 +20,7 @@ document.getElementById('downloadCV').addEventListener('click', function() {
 const sliderContainers = document.querySelectorAll('.slider-container');
 
 sliderContainers.forEach(container => {
-    const sliderTrack = container.querySelector('.slider-track'); // Get the track element for this specific slider
+    const sliderTrack = container.querySelector('.slider-track');
     const slides = Array.from(sliderTrack.children);
 
     // Clone the elements to create an infinite effect
@@ -28,6 +28,4 @@ sliderContainers.forEach(container => {
         const clone = slide.cloneNode(true);
         sliderTrack.appendChild(clone);
     });
-
-    // Optional: Add functionality to move slides, e.g., auto-scroll or next/prev buttons
 });
