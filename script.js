@@ -1,4 +1,3 @@
-// Create a function to help viewer download my CV
 document.getElementById('downloadCV').addEventListener('click', function() {
     var link = document.createElement('a');
     
