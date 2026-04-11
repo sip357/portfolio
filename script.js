@@ -1,11 +1,11 @@
 document.getElementById('downloadCV').addEventListener('click', function() {
     var link = document.createElement('a');
     
-    link.href = "resume/SomtoResume.pdf";
+    link.href = "resume/SomtoSWEResume.pdf";
     
-    link.download = 'SomtoIkePetersResume.pdf'; 
+    link.download = 'SomtoSWEResume.pdf'; 
     
-    // Append the anchor to the body (optional, to ensure compatibility)
+    // Append the anchor to the body
     document.body.appendChild(link);
 
     // Trigger the download by simulating a click
